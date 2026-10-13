@@ -1,0 +1,58 @@
+:root {
+  --bg: #141820;
+  --fg: #e8eef6;
+  --muted: #8b98a8;
+  --accent: #40b4ff;
+  --line: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 280px;
+  padding: 14px 16px 16px;
+  background: linear-gradient(160deg, #1a2230 0%, #10151c 100%);
+  color: var(--fg);
+  font: 13px/1.45 "SF Pro Text", "PingFang SC", "Segoe UI", sans-serif;
+}
+
+header h1 {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+header p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  cursor: pointer;
+}
+
+.switch-row input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.hint {
+  margin: 10px 2px 0;
+  color: var(--muted);
+  font-size: 11px;
+}
